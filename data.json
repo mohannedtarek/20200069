@@ -1,0 +1,23 @@
+{"students":
+    [ 
+        {
+            "id": "20200069",
+            "name": "Mohanned Tarek Hussien",
+            "faculty":"Faculty of Computers science"
+            
+        },
+        {
+            "id": "20203812",
+            "name": "mahmoud ahmed taher",
+            "faculty":"Faculty 2"
+           
+        },
+        {
+            "id": "20182329",
+            "name": "abdelwahab mahmoud ashraf",
+            "faculty":"Faculty of Computers science"
+            
+        }
+    ]
+
+}
