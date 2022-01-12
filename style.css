@@ -1,161 +1,203 @@
 /*@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 */
-.title{
-    text-align: center; 
-    color:4CAF50;
-    text-transform: uppercase;
-font-size: 32px;
-font-family: 'Times New Roman', Times, serif
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap');
+ 
+/* font-family: 'Big Shoulders Text', cursive; */
+ 
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
 }
-
-body{
-  /*  background-image: url(https://www.fue.edu.eg/ImageHandler.ashx?Id=6429&SS=7236ec28809dbdd72855fd7784ae9d01);*/
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-ul{
-    list-style-type: none;
-    border: 1px solid #e7e7e7; 
-    background-color: #f3f3f3;
-    overflow: hidden;
-    padding: 0px;
-    margin: 0px;
-
-}
-li{
-    float: left;
-}
-
-a{
+ 
+.nav-flex-row li {
     text-decoration: none;
-    color: #008CBA;
+    list-style-type: none;
+    padding: 20px 15px;
 }
-
-li a{
-    display: block;
-    color: #666;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+ 
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #000;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
 }
-
-li a:hover{
-    background-color: #dddddd;
+.nav-flex-row li a:hover{
+    background: #E7E7E7;
 }
-
-.nav-right{
-    float:right;
+ 
+.section-intro {
+    height: 820px;
+    background-image: url(images/download\ \(3\).jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-li a.active{
-background-color: rgb(76, 175, 80);
-color: white;
-}
-.searchbar{
-    width: 20%;
-    height: auto;
-   display: flex;
-    border: 1px;
-    border-style: solid;
-    border-color: #dfe1e5;
-    margin: 8px auto;
-    border-radius: 24px; /* changed from 30 to 15*/
-    padding: 0px 10px;
-    display: flexbox;
-   
-}
-
-.searchbar .searchicon svg{
-    width: 100%;
-    height: 100%;
-   
-    
-}
-.searchicon{
-    padding-top: 5px;
-    fill: #9aa0a6;    
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-
-
-.searchbar:hover{
-    /*box-shadow: 0px 0px 2px dimgray;*/
-    box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
-    border-color:rgba(223,225,229,0);
-   
-}
-
-
-.searchbox{
-
-    width: 100%;
-    padding: 8px 8px;
-    border: none;
-    margin: 0 2px;
-    outline: none;
-}
-
-div:not(.searchbar,.searchicon){
-    border:3px;
-    border-style: dotted;
-    border-radius: 15px;
-    box-shadow: 25px 25px 25px dimgray;
-    background-image: linear-gradient(red,yellow);
-
-
-}
-table {
-    width:100%;
-    border-collapse: collapse;
-}
-
-thead tr{
+ 
+.section-intro h1 {
     text-align: center;
+    color: #000;
+    font-size: 4em;
+    font-weight: 700;
 }
-
-thead{
-    background-color: rgb(76, 175, 80);
-    color:white;    
+ 
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-
-
-tbody tr:nth-child(even){
-background-color:lightgray;
-
+ 
+.link-to-book-wrapper {
+    flex: 1;
 }
-
-.button{
-    background-color: rgb(76, 175, 80);
-    border:none;
-    padding: 15px 32px;
-    color:white;
-    font-size:14px;
-    display: inline-block;
-
+ 
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3c0;
+    padding: 50px 30px;
 }
-
-input[type=text],[type=email],[type=tel],[type=date],select,textarea{
-    width: 50%;
-    padding: 6px 10px;
-    margin: 8px 0px;
-    box-sizing: border-box;
+ 
+.link-to-book {
+    color: #ffffff;
+    display: block;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+}
+ 
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+ 
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+ 
+.carousel-inner {
+    height: 700px;
+}
+ 
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+ 
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+ 
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
     font-size: 16px;
-
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
 }
-fieldset{
-    margin: 20px;
+ 
+.btn.btn-primary:hover {
+    background-color: #747474;
 }
-p{
-    font-family: 'Times New Roman', Times, serif;
-    letter-spacing: 3px;
-    text-indent: 50px;
-    text-align: justify;
+.opening-time,
+.contact-address {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
 }
-
-form{
-    width: 100%;
-    
+ 
+.form-group p {
+    font-size: 1.2em;
+}
+ 
+.opening-time p span,
+.contact-address p span {
+    display: block;
+}
+ 
+@media (min-width:577px) and (max-width: 800px) {
+ 
+    .section-intro {
+        height: 500px;
+    }
+ 
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+ 
+    .carousel-inner {
+        height: auto;
+    }
+ 
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+ 
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+ 
+    .about-section {
+        padding: 30px;
+    }
+ 
+    .section-intro h1 {
+        font-size: 2em;
+    }
+ 
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+ 
+    .carousel-inner {
+        height: auto;
+    }
+ 
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+ 
+    .form-group p {
+        font-size: 15px;
+    }
+ 
+    .opening-time p span,
+    .contact-address p span {
+        font-size: 15px;
+        text-align: center;
+    }
+ 
 }
